@@ -13,10 +13,17 @@ import androidx.compose.ui.unit.dp
 fun Tabs() {
 
     Row(
-        horizontalArrangement = Arrangement.spacedBy(24.dp)
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.spacedBy(
+            32.dp,
+            alignment = Alignment.CenterHorizontally
+            )
+
     ) {
 
-        Column {
+        Column (
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
 
             Text(
                 text = "Noticias",
