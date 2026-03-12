@@ -9,6 +9,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.example.t4_newsapp.components.NewsCarousel
+import com.example.t4_newsapp.components.NewsGrid
 import com.example.t4_newsapp.components.SearchBar
 import com.example.t4_newsapp.components.Tabs
 import com.example.t4_newsapp.ui.theme.T4NewsAppTheme
@@ -53,6 +55,10 @@ fun NewsScreen() {
             fontWeight = FontWeight.Bold
         )
 
+        Spacer(modifier = Modifier.height(12.dp))
+
+        NewsCarousel()
+
         Spacer(modifier = Modifier.height(20.dp))
 
         Text(
@@ -60,5 +66,8 @@ fun NewsScreen() {
             style = MaterialTheme.typography.titleLarge,
             fontWeight = FontWeight.Bold
         )
+        Spacer(modifier = Modifier.height(12.dp))
+
+        NewsGrid()
     }
 }
